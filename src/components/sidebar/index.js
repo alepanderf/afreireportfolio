@@ -35,7 +35,7 @@ const Sidebar = () => (
                 <a target="_blank" rel='noreferrer' href="https://github.com/alepanderf">
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
                 </a>
-                <a target="_blank" rel='noreferrer' href="https://www.instagram.com/alejandro_sfreire?igsh=MXdzMHU5dm02OWpmNw%3D%3D&utm_source=qr">
+                <a target="_blank" rel='noreferrer' href="https://www.instagram.com/alejandrosfreire/">
                     <FontAwesomeIcon icon={faInstagram} color="#4d4d4e"/>
                 </a>
             </li>
