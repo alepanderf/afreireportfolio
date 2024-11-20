@@ -1,6 +1,7 @@
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useState, useEffect} from 'react'
+import { Loader } from 'react-loaders'
 
 const Projects = () => {
 
@@ -28,8 +29,8 @@ const Projects = () => {
                 </h1>
             </div>
         </div>
+        <Loader type = "pacman"/>
         </>
-
     )
 }
 
