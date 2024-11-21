@@ -3,7 +3,7 @@ import './index.scss'
 import { useState, useEffect} from 'react'
 import { Loader } from 'react-loaders'
 import Card from '../card'
-import logo from '../../logo512 copy.png'
+import logo from '../../logo512copy.png'
 
 const Projects = () => {
     
@@ -30,14 +30,12 @@ const Projects = () => {
                 />
                 </h1>
             </div>
-            <div>
-                <Card
-                    image={logo}
-                    name={"Test"}
-                    description={"Test for description cuz why not"}
-                    githubLink={"test"}
-                />
-            </div>
+            <Card
+                image={logo}
+                name={"Test"}
+                description={"Test for description cuz why not"}
+                githubLink={"test"}
+            />
         </div>
         <Loader type = "pacman"/>
         </>
