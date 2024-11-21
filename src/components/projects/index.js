@@ -2,9 +2,10 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useState, useEffect} from 'react'
 import { Loader } from 'react-loaders'
+import Card from '../card'
 
 const Projects = () => {
-
+    
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
@@ -23,8 +24,8 @@ const Projects = () => {
                 <h1>
                 <AnimatedLetters
                     letterClass={letterClass}
-                    strArray = {['P','r','o','j','e','c','t','s',' ','b','e','i','n','g',' ','b','u','i','l','t.',' ',' ',' ',' ','','C','h','e','c','k',' ','b','a','c','k',' ','s','o','o','n',' ',':)']}
-                    idx={50}
+                    strArray = {['P','r','o','j','e','c','t','s']}
+                    idx={9}
                 />
                 </h1>
             </div>
