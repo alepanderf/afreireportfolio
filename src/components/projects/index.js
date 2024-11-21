@@ -30,12 +30,16 @@ const Projects = () => {
                 />
                 </h1>
             </div>
-            <Card
-                image={logo}
-                name={"Test"}
-                description={"Test for description cuz why not"}
-                githubLink={"test"}
-            />
+            <div>
+                <h1>
+                <Card
+                    image={logo}
+                    name={"Test"}
+                    description={"Test for description cuz why not"}
+                    githubLink={"test"}
+                />
+                </h1>
+            </div>
         </div>
         <Loader type = "pacman"/>
         </>
