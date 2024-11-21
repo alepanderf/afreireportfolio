@@ -3,7 +3,7 @@ import './index.scss'
 import { useState, useEffect} from 'react'
 import { Loader } from 'react-loaders'
 import Card from '../card'
-import logo from '../../../logo192.png'
+import logo from '../../logo512 copy.png'
 
 const Projects = () => {
     
