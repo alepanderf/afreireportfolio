@@ -1,18 +1,16 @@
 .nav-bar {
     background: #181818;
-    width: 100%;
-    height: 60px;
+    width: 80px;
+    height: 100%;
     position: fixed;
     top: 0;
-    left: 0; // Fully hidden when not toggled
-    z-index: 100; // Ensure it stays on top without affecting layout
+    left: -85px; // Move further left when hidden
+    z-index: 10;
     min-height: 100vh;
     transition: left 0.3s ease-in-out;
-    pointer-events: none; // Prevent it from affecting content when closed
 
     &.open {
         left: 0; // Show when toggled
-        pointer-events: auto; // Allow interaction when opened
     }
 
     .logo {
@@ -67,41 +65,40 @@
         width: 100%;
         padding: 0;
         list-style: none;
-
+    
         @media (max-width: 768px) {
             bottom: 60px;
         }
-
+    
         @media (max-width: 480px) {
             bottom: 80px;
         }
-
+    
         li {
             a {
                 padding: 7px 0;
                 font-size: 20px;
                 display: block;
-
+    
                 &:hover svg {
                     color: #ffd700;
                 }
             }
         }
     }
-}
+}    
 
 // Burger Menu Button
 .burger-menu {
     position: fixed;
-    top: 15px;
-    left: 20px; // Move closer to the left edge
+    top: 20px;
+    left: 5px; // Move closer to the left edge
     background: none;
     border: none;
     color: white;
     font-size: 30px;
     cursor: pointer;
-    z-index: 200; // Ensure it stays on top
-    pointer-events: auto;
+    z-index: 20;
 
     &:focus {
         outline: none;
@@ -111,10 +108,8 @@
 // Responsive Styles
 @media (max-width: 768px) {
     .nav-bar {
-        height: 50px;
         width: 250px;
-        left: -260px; // Keep fully hidden when closed
-        padding: 0 10px;
+        left: -260px; // Move further left when hidden on mobile
 
         &.open {
             left: 0;
@@ -122,7 +117,6 @@
     }
 
     .burger-menu {
-        top: 10px;
-        left: 10px; // Fully align to the left edge on mobile
+        left: 0px; // Fully align to the left edge on mobile
     }
 }
