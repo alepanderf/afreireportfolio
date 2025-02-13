@@ -4,13 +4,13 @@
     height: 100%;
     position: fixed;
     top: 0;
-    left: -80px; // Initially hidden for mobile
+    left: -85px; // Move further left when hidden
     z-index: 10;
     min-height: 100vh;
     transition: left 0.3s ease-in-out;
 
     &.open {
-        left: 0; // Show when open
+        left: 0; // Show when toggled
     }
 
     .logo {
@@ -58,7 +58,7 @@
 
     ul {
         position: absolute;
-        bottom: 40px; // Increased from 20px to 40px to move it up
+        bottom: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,11 +67,11 @@
         list-style: none;
     
         @media (max-width: 768px) {
-            bottom: 60px; // Move up even more for mobile devices
+            bottom: 60px;
         }
     
         @media (max-width: 480px) {
-            bottom: 80px; // Extra adjustment for smaller devices like iPhones
+            bottom: 80px;
         }
     
         li {
@@ -92,7 +92,7 @@
 .burger-menu {
     position: fixed;
     top: 20px;
-    left: 20px;
+    left: 5px; // Move closer to the left edge
     background: none;
     border: none;
     color: white;
@@ -109,7 +109,7 @@
 @media (max-width: 768px) {
     .nav-bar {
         width: 250px;
-        left: -250px;
+        left: -260px; // Move further left when hidden on mobile
 
         &.open {
             left: 0;
@@ -117,6 +117,6 @@
     }
 
     .burger-menu {
-        left: 10px;
+        left: 0px; // Fully align to the left edge on mobile
     }
 }
