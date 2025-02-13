@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; // Ensures full centering
+    text-align: center;
 
     ul {
         padding: 0;
@@ -16,7 +17,7 @@
 
         li {
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
             list-style: none;
             margin-bottom: 10px;
             overflow: hidden;
@@ -26,6 +27,7 @@
             animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
             width: 100%; // Ensures it stays within the form width
+            max-width: 100%;
 
             &.half {
                 width: 100%; // Full width for better mobile layout
@@ -59,10 +61,16 @@
         border-radius: 5px;
         height: 50px;
 
+        @media (max-width: 768px) {
+            font-size: 14px;
+            padding: 12px;
+            height: 45px;
+        }
+
         @media (max-width: 480px) {
             font-size: 14px;
             padding: 10px;
-            height: 45px;
+            height: 40px;
         }
     }
 
@@ -70,8 +78,12 @@
         min-height: 150px;
         height: auto;
 
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             min-height: 120px;
+        }
+
+        @media (max-width: 480px) {
+            min-height: 100px;
         }
     }
 
@@ -80,12 +92,13 @@
         background: transparent;
         letter-spacing: 3px;
         text-decoration: none;
-        padding: 10px 15px;
+        padding: 12px 15px;
         border: 1px solid #ffd700;
         border-radius: 4px;
         display: block;
         text-align: center;
         margin: 20px auto; // Centers button
+        width: fit-content;
 
         &:hover {
             background: #ffd700;
