@@ -26,20 +26,16 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        I'm a rising Junior currently pursuing my bachelor's degree in Computer Science from Rutgers University - New Brunswick. 
-                        As an aspiring full-time Software Engineer, I am seeking intern and co-op Software Engineering positions with an interest 
-                        in fintech and the applications of modern technologies to facilitate business processes for employers. I am also very 
-                        interested and keen on working for a start-up before my graduation.  
+                        I'm a Junior currently pursuing my bachelor's degree in Computer Science from Rutgers University - New Brunswick. 
+                        As an aspiring full-time backend or fullstack developer, I am seeking a fall 2025 internship or co-op in Software Engineering with an interest 
+                        in industries ranging from big tech to fintech and even startups. Please do not hesitate to reach out to me via email or the built-in form on this website!  
                     </p>
                     <p>
-                        I have experience in full-stack web development, as well as RESTful APIs and a robust understanding of complex backend 
-                        frameworks such as Spring Boot or Flask. I am currently working on familiarizing myself with Python libraries such as 
-                        PyTorch and TensorFlow to deepen my understanding of the applications of machine learning.
+                        I have experience in full-stack web development, through my previous internship at LG Electronics where I built several data modeling features utilizing efficient REST APIs and the nonrelational database MongoDB.
+                        I am currently working on familiarizing myself with Springboot and AWS as I understand how vast scalable code-bases built using these framworks are for adding features and reusing functions due to its object-oriented nature.
                     </p>
                     <p>
-                        Outside of development, I am currently working on turning my muscle-ups into strict muscle-ups without the need for 
-                        swinging, as well as improving my technique on the violin, which I have practiced for 8+ years now. I specifically enjoy 
-                        performing chamber music.
+                        Outside of development, you can find me enjoying my hobbies such as weighted calisthenics, running, and practicing the violin as I am classically trained and enjoy learning new and challenging pieces.
                     </p>
                 </div>
             </div>
