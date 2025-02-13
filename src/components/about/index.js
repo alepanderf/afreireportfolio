@@ -32,7 +32,7 @@ const About = () => {
                     </p>
                     <p>
                         I have experience in full-stack web development, through my previous internship at LG Electronics where I built several data modeling features utilizing efficient REST APIs and the nonrelational database MongoDB.
-                        I am currently working on familiarizing myself with Springboot and AWS as I understand how vast scalable code-bases built using these framworks are for adding features and reusing functions due to its object-oriented nature.
+                        I am currently working on familiarizing myself with Springboot and AWS as I understand how vast scalable code-bases built using these framworks are for adding features and reusing functions due to its object-oriented nature. This 2025 summer I will be at Walmart in their Sunnyvale, CA office interning as a software engineer!
                     </p>
                     <p>
                         Outside of development, you can find me enjoying my hobbies such as weighted calisthenics, running, and practicing the violin as I am classically trained and enjoy learning new and challenging pieces.
