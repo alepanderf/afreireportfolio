@@ -1,114 +1,97 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
 .page {
+    flex: 1;
     width: 100%;
-    height: 100%;
-    position: absolute;
+    position: relative; // Allows content to expand
+    overflow-y: auto; // Enables scrolling when needed
 }
 
-.top-tags {
-    bottom: auto;
-    top: 35px;
-}
-
-.tags{
-    color: #ffd700;
-    opacity: 0.6;
-    position: absolute;
-    bottom: 0;
-    left: 120px;
-    font-size: 18px;
-    font-family: 'La Belle Aurore';
-}
-
-.bottom-tag-html {
-    margin-left: -20px;
-}
-
-.container{
+.container {
     width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
+    min-height: 100vh; // Ensures it grows with content
+    position: relative; // Avoids absolute positioning issues
     opacity: 0;
-    top: 5%;
     margin: 0 auto;
     z-index: 1;
-    transform-style: preseerve-3d;
+    transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
+    padding: 5%; // Adds space for readability
+
+    @media (max-width: 768px) {
+        padding: 10%; // More spacing on smaller screens
+    }
 }
 
 .projects-page,
 .about-page,
 .contact-page {
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
+        position: relative; // Allows content to push down naturally
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 50%;
+        max-width: 700px;
+        margin: 0 auto; // Centers text block
+        padding: 20px;
+        text-align: justify;
 
-        h1{
-            font-size: 53px; 
+        @media (max-width: 1024px) {
+            width: 70%;
+        }
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 3rem;
             font-family: 'Coolvetica';
             color: #ffd700;
             font-weight: 400;
-            margin-top: 0;
-            position: relative;
-            margin-bottom: 40px;
-            left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
 
-            &::before{
-                content: '<h1>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-top: -10px;
-                left: -10px;
-                opacity: 0.6;
-                line-height: 18px;
+            @media (max-width: 768px) {
+                font-size: 2.5rem;
             }
 
-            &::after {
-                content: '<h1/>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                line-height: 18px;
-                position: absolute;
-                left: -30px;
-                bottom: -20px;
-                margin-left: 20px;
-                opacity: 0.6;
+            @media (max-width: 480px) {
+                font-size: 2rem;
             }
         }
 
         p {
-            font-style: 13px;
+            font-size: 1.2rem;
             color: #fff;
             font-family: sans-serif;
             font-weight: 300;
-            min-width: fit-content;
             animation: pulse 1s;
+            line-height: 1.6;
+            margin-bottom: 15px;
 
-            &:nth-of-type(1) {
-                animation-delay: 1.1s;
+            @media (max-width: 768px) {
+                font-size: 1rem;
             }
-            &:nth-of-type(2) {
-                animation-delay: 1.2s;
-            }
-            &:nth-of-type(3) {
-                animation-delay: 1.3s;
-            }
-        }
-    }
 
-    .text-animate-hover {
-        &:hover{
-            color: #fff;
+            @media (max-width: 480px) {
+                font-size: 0.9rem;
+            }
         }
     }
 }
 
+.text-animate-hover {
+    &:hover {
+        color: #fff;
+    }
+}
