@@ -1,10 +1,8 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/a1.png'
-import LogoSubtitle from '../../assets/images/alejandro_name2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faCode, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -36,9 +34,6 @@ const Sidebar = () => {
                     </NavLink>
                     <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setIsOpen(false)}>
                         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-                    </NavLink>
-                    <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" onClick={() => setIsOpen(false)}>
-                        <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
                     </NavLink>
                 </nav>
 
