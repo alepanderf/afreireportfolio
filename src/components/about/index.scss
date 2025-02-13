@@ -5,34 +5,32 @@
     justify-content: flex-start;
     min-height: 100vh; // Allow scrolling
     width: 100%;
-    padding: 5% 5%;
+    padding: 5%;
     position: relative;
     overflow-y: auto; // Enable scrolling if needed
 
     @media (min-width: 1024px) {
         flex-direction: row; // Side-by-side layout on larger screens
-        justify-content: space-between;
+        justify-content: center; // Center both text and any additional elements
         align-items: center;
         gap: 50px;
     }
 
     .text-zone {
-        width: 100%;
+        width: 90%;
         max-width: 700px;
+        margin: 0 auto; // Ensures perfect centering
+        text-align: center; // Aligns text in the center by default
 
         @media (min-width: 1024px) {
             width: 50%;
-            text-align: left;
-        }
-
-        @media (max-width: 768px) {
-            width: 90%;
-            text-align: center;
+            text-align: left; // Left-align text only on larger screens
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
+            text-align: center; // Ensures the title is centered
 
             @media (max-width: 768px) {
                 font-size: 2rem;
@@ -47,7 +45,11 @@
             font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 20px;
-            text-align: justify;
+            text-align: center; // Ensures text is centered on all screens
+
+            @media (min-width: 1024px) {
+                text-align: justify; // Justify text only on larger screens
+            }
 
             @media (max-width: 1024px) {
                 font-size: 1.1rem;
