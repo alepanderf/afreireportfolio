@@ -25,7 +25,6 @@ const Sidebar = () => {
             <div className={`nav-bar ${isOpen ? 'open' : ''}`}>
                 <Link className='logo' to='/' onClick={() => setIsOpen(false)}>
                     
-                    <img className="sub-logo" src={LogoSubtitle} alt="Alejandro" />
                 </Link>
 
                 <nav>
