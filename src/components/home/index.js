@@ -43,7 +43,6 @@ const Home = () => {
                     CONTACT ME
                 </Link>
             </div>
-            <Logo/>
         </div>
         <Loader type="pacman"/>
         </>
