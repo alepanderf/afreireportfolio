@@ -3,20 +3,22 @@
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden; // Prevents side-to-side scrolling
+    overflow-y: auto; // Enables only vertical scrolling
 }
 
 .page {
     flex: 1;
     width: 100%;
-    position: relative; // Allows content to expand
-    overflow-y: auto; // Enables scrolling when needed
+    position: relative;
+    overflow-y: auto; // Allows up-down scrolling
+    overflow-x: hidden; // Prevents side scrolling
 }
 
 .container {
     width: 100%;
     min-height: 100vh; // Ensures it grows with content
-    position: relative; // Avoids absolute positioning issues
+    position: relative;
     opacity: 0;
     margin: 0 auto;
     z-index: 1;
@@ -26,7 +28,7 @@
     padding: 5%; // Adds space for readability
 
     @media (max-width: 768px) {
-        padding: 10%; // More spacing on smaller screens
+        padding: 10%;
     }
 }
 
@@ -34,13 +36,13 @@
 .about-page,
 .contact-page {
     .text-zone {
-        position: relative; // Allows content to push down naturally
+        position: relative;
         left: auto;
         top: auto;
         transform: none;
         width: 50%;
         max-width: 700px;
-        margin: 0 auto; // Centers text block
+        margin: 0 auto;
         padding: 20px;
         text-align: justify;
 
