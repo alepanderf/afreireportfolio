@@ -2,19 +2,25 @@
     background: #181818;
     width: 80px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    z-index: 3;
-    min-height: 500px; //this was the shit i changed (absolute/5000px)
+    left: -80px; // Initially hidden for mobile
+    z-index: 10;
+    min-height: 100vh;
+    transition: left 0.3s ease-in-out;
 
-    .logo{
+    &.open {
+        left: 0; // Show when open
+    }
+
+    .logo {
         display: block;
         padding: 8px 0;
 
         img {
             display: block;
             margin: 8px auto;
-            width : 43px;
+            width: 43px;
             height: auto;
 
             &.sub-logo {
@@ -24,14 +30,11 @@
     }
 
     nav {
-        display: block;
         text-align: center;
         position: absolute;
-        height: 210 px;
         top: 50%;
-        margin-top: -120px;
-        width:100%;  
-        
+        transform: translateY(-50%);
+        width: 100%;
 
         a {
             font-size: 25px;
@@ -39,67 +42,16 @@
             display: block;
             line-height: 51px;
             height: 51px;
-            position: relative;
             text-decoration: none;
-
-            i {
-                transition: all 0.3s ease-out;
-            }
 
             &:hover {
                 color: #ffd700;
+            }
 
+            &.active {
                 svg {
-                    opacity: 0;
+                    color: #ffd700;
                 }
-
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-
-                }
-            }
-        }
-
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
-        }
-
-        a.contact-link {
-            &:after{
-                content: 'CONTACT';
-            }
-        }
-
-        a.projects-link {
-            &:after {
-                content: 'PROJECTS';
-            }
-        }
-
-        a.active {
-            svg{
-                color: #ffd700;
             }
         }
     }
@@ -107,27 +59,56 @@
     ul {
         position: absolute;
         bottom: 20px;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         padding: 0;
         list-style: none;
-        text-align: center;
-        margin: 0;
-        margin-left: 29px;
 
         li {
-            a{
+            a {
                 padding: 7px 0;
-                display: block;
                 font-size: 20px;
-                line-height: 16px;
+                display: block;
 
                 &:hover svg {
-                    color: #ffd700
+                    color: #ffd700;
                 }
             }
-
-            
         }
+    }
+}
 
+// Burger Menu Button
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 20;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 250px;
+        left: -250px;
+
+        &.open {
+            left: 0;
+        }
+    }
+
+    .burger-menu {
+        left: 10px;
     }
 }
