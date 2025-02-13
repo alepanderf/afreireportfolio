@@ -50,7 +50,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I'm open to chats about the direction of where technology is moving and inquiries about open positions for software engineering internships or full-time roles, specifically in fullstack or backend development.
+                        I'm open to chats about the direction of where technology is moving and inquiries about open positions for software engineering internships or full-time roles, specifically in fullstack or backend development. For alternative ways to find me, my Linkedin, Github, and Instagram are in the sidebar!
                     </p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>
