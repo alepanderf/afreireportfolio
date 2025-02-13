@@ -50,7 +50,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I am interested in internships or co-ops in Software Engineering, Cybersecurity, IT, or any technology related field during the fall, spring, or summer seasons and open to work with new technologies. Please don't hesitate to reach out with any questions or requests you might have!
+                        I'm open to chats about the direction of where technology is moving and inquiries about open positions for software engineering internships or full-time roles, specifically in fullstack or backend development.
                     </p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>
