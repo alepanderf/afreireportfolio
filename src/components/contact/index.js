@@ -71,6 +71,11 @@ const Contact = () => {
                                 <li>
                                     <input type="submit" className='flat-button' value="SEND" />
                                 </li>
+                                <li>
+                                    <a href="/path-to-your-resume.pdf" download="Alejandro_freire_resume" className="flat-button resume-button">
+                                        DOWNLOAD RESUME
+                                    </a>
+                                </li>
                             </ul>
                         </form>
                     </div>
